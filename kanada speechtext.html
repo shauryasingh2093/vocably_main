@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="recording-nav">
+            <p class="double-arrow-design"><a class="arrow-anchor" href="listenListen.html">&#8592;</a></p>
+            <h1 style="text-align: center; padding-top: 30px; color: #000000;">Listen & Read</h1>
+            <p class="double-arrow-design"><a class="arrow-anchor" href="readSpeak.html">&#8594;</a></p>
+        </div>
+        <div class="recording-header-ls">
+            <audio controls class="audiorecord">
+                <source src="./assets/audio/listenRead.mp3" type="audio/mp4">
+            </audio>
+            <p class="speakout">Play audio and listen while reading the sentence. Press record and read the sentence. Play your recording and check if you are correct.</p>
+                 
+            <audio controls class="audiorecord">
+                <source src="./assets/audio/kanada.mp3.mp3" type="audio/mp4">
+            </audio><br>
+            <p class="speakout" id="textReference">मेरा अच्छा समय चल रहा है</p>   
+            <h5 style="text-align: center;"  id="instruction"></h5>
+            <div id="update">
+
+            </div>
+            <div class="recording-controls">
+                <button class="click-button" style="margin-right: 2%;" id="start">Record</button>
+                <button class="click-button" id="analyse">Analyse</button>
+            </div>
+            <div class="recording-result">
+                <textarea name="comment" class="record-textbox" id="speechText"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
